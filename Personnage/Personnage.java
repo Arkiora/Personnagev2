@@ -16,10 +16,9 @@ public class Personnage {
       return this.vie;
    }
    public void Potion() {
-      this.vie += ((int) (Math.random() * ((50 - 10))));
+      this.vie += ((int) (Math.random() * ((50 - 10)) + 10));
    }
    public void Attaque(Personnage a, int b) {
       a.vie -= b;
-      this.vie -= b/4;
    }
 }
